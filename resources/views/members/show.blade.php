@@ -25,14 +25,13 @@
 				<div class="panel-body">
 					<address>
 						Email: {{ $member->email }}
-						<span>
-						<form action="{{ url('members/' . $member->id . '/send-mail') }}" method="post">
-							{{ csrf_field() }}
-							<button type="submit" class="btn btn-primary btn-sm">Send Message</button>
-						</form>
 						Country: {{ $member->address->country }}<br>
 						ZIP Code: {{ $member->address->zip }}
 					</address>
+						<form action="{{ url('members/' . $member->id . '/send-mail') }}" method="post">
+							{{ csrf_field() }}
+							<button type="submit" class="btn btn-link" title="Send Mail"><i class="fa fa-envelope"></i> Send Mail</button>
+						</form>					
 				</div>
 			</div>
 			<div class="panel panel-default">
