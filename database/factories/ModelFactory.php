@@ -31,7 +31,7 @@ $factory->define(App\Address::class, function (Faker\Generator $faker) {
 });
 
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
-    $title = $faker->realText(10);
+    $title = $faker->sentence(6, false);
     $slug = str_slug($title, '-');
 
     return [
