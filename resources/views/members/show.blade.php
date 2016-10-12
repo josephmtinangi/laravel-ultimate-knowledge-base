@@ -20,6 +20,17 @@
 		<div class="col-sm-3">
 			<div class="panel panel-default">
 				<div class="panel-heading">
+					<h3 class="panel-title">Address</h3>
+				</div>
+				<div class="panel-body">
+					<address>
+						Country: {{ $member->address->country }}<br>
+						ZIP Code: {{ $member->address->zip }}
+					</address>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
 					<h3 class="panel-title">Roles</h3>
 				</div>
 				<div class="panel-body">
