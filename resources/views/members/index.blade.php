@@ -14,7 +14,7 @@
 							@if($member->roles->count() > 0)
 								<ul class="list-unstyled">
 								@foreach($member->roles as $role)
-									<li>{{ $role->name }}</li>
+									<li><a href="{{ url('roles/' . $role->name) }}">{{ $role->name }}</a></li>
 								@endforeach
 								</ul>
 							@endif

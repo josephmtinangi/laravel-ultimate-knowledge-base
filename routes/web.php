@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::resource('members', 'MemberController');
 
 Route::resource('posts', 'PostController');
+
+Route::resource('roles', 'RoleController');
