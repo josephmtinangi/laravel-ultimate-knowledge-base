@@ -8,6 +8,21 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+.card {
+	background: #8CA72B;
+	height: 250px;
+	min-height: 150px;
+	border: solid 2.5px #FFF;
+	h3 {
+		a {
+			color: #FFF;
+		}
+	}
+	p {
+		color: #8D4202;
+	}
+}
+
 .summary {
 	padding : {
 		top: 5em;

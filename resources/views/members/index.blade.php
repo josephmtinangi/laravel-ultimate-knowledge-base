@@ -3,6 +3,9 @@
 @section('content')
 
 	<div class="container">
+		<div class="page-header">
+		  <h1>Members</h1>
+		</div>
 		@foreach($members->chunk(4) as $membersSet)
 			<div class="row">
 				@foreach($membersSet as $member)

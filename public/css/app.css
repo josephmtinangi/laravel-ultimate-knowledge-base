@@ -5766,6 +5766,16 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.card {
+  background: #8CA72B;
+  height: 250px;
+  min-height: 150px;
+  border: solid 2.5px #FFF; }
+  .card h3 a {
+    color: #FFF; }
+  .card p {
+    color: #8D4202; }
+
 .summary {
   padding-top: 5em;
   padding-bottom: 5em; }
