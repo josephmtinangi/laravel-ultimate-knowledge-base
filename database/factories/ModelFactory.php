@@ -37,7 +37,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
     return [
         'title' => $title,
         'slug' => $slug,
-        'content' => $faker->realText(300),
+        'content' => $faker->paragraphs(6, true),
         'image' => $faker->imageUrl(640, 480, 'nightlife')
     ];
 });
