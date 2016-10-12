@@ -1,6 +1,12 @@
 <?php
 
 return [
-	'github' => 'https://github.com/josephmtinangi',
-	'bitbucket' => 'https://bitbucket.org/josephmtinangi'
+	'github' => [
+		'url' => 'https://github.com/josephmtinangi',
+		'username' => 'josephmtinangi'
+	],
+	'bitbucket' => [
+		'url' => 'https://bitbucket.org/josephmtinangi',
+		'username' => 'josephmtinangi'
+	]	
 ];

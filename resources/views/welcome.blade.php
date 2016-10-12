@@ -48,8 +48,8 @@
             <div class="col-xs-12 col-sm-4">
                 <h3>Social</h3>
                 <ul class="list-unstyled">
-                     <li><a href="{{ Config('social.github') }}">Github</a></li>
-                     <li><a href="{{ Config('social.bitbucket') }}">Bitbucket</a></li>
+                     <li><a href="{{ Config('social.github.url') }}" title="{{ Config('social.github.username') }}">Github</a></li>
+                     <li><a href="{{ Config('social.bitbucket.url') }}" title="{{ Config('social.bitbucket.username') }}">Bitbucket</a></li>
                  </ul> 
             </div>
         </div>
