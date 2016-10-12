@@ -51,7 +51,7 @@ class MemberController extends Controller
      */
     public function show($id)
     {
-        $member = User::with(['address', 'roles'])->find($id);
+        $member = User::with(['address', 'roles', 'posts'])->find($id);
         return view('members.show', compact('member'));
     }
 

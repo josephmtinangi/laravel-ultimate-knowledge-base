@@ -59,6 +59,30 @@
 					</p>
 				</div>
 			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Posts</h3>
+				</div>
+				<div class="panel-body">
+					@if($member->posts->count() > 0)
+						@foreach($member->posts->chunk(3) as $postsSet)
+							<div class="row">
+								@foreach($postsSet as $post)
+									<div class="col-xs-12 col-sm-4">
+										<div class="well">
+											<h4><a href="{{ url('posts/' . $post->slug) }}">{{ $post->title }}</a></h4>
+										</div>
+									</div>
+								@endforeach
+							</div>
+						@endforeach
+					@else
+						<p>
+							This user likes to read the posts of others
+						</p>
+					@endif
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
