@@ -38,6 +38,6 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
         'title' => $title,
         'slug' => $slug,
         'content' => $faker->paragraphs(6, true),
-        'image' => $faker->imageUrl(640, 480, 'nightlife')
+        'image' => $faker->imageUrl(640, 960, 'nightlife')
     ];
 });
