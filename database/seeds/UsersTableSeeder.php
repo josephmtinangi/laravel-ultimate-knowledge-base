@@ -6,6 +6,8 @@ use App\User;
 
 use App\Address;
 
+use App\Post;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -18,9 +20,11 @@ class UsersTableSeeder extends Seeder
 
     	User::truncate();
     	Address::truncate();
+        Post::truncate();
 
         factory(App\User::class, 10)->create()->each(function($u) {
         	$u->address()->save(factory(App\Address::class)->make());
+            $u->posts()->save(factory(App\Post::class)->make());
         });
     }
 }

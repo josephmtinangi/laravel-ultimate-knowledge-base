@@ -29,3 +29,15 @@ $factory->define(App\Address::class, function (Faker\Generator $faker) {
 		'zip' => $faker->postCode
 	];
 });
+
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
+    $title = $faker->realText(10);
+    $slug = str_slug($title, '-');
+
+    return [
+        'title' => $title,
+        'slug' => $slug,
+        'content' => $faker->realText(300),
+        'image' => $faker->imageUrl(640, 480, 'nightlife')
+    ];
+});
