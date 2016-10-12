@@ -8,6 +8,10 @@ use App\Http\Requests;
 
 use App\User;
 
+use Mail;
+
+use App\Mail\WelcomeToJSoftwares;
+
 class MemberController extends Controller
 {
     /**
@@ -87,5 +91,15 @@ class MemberController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function sendMail($id)
+    {
+        $user = User::findOrFail($id);
+        
+        $email = new WelcomeToJSoftwares(new User(['name' => $user->name]));
+        Mail::to($user->email)->send($email);
+
+        return redirect('members/' . $user->id);
     }
 }

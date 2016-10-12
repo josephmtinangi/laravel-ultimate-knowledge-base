@@ -20,3 +20,5 @@ Route::resource('members', 'MemberController');
 Route::resource('posts', 'PostController');
 
 Route::resource('roles', 'RoleController');
+
+Route::post('members/{id}/send-mail', 'MemberController@sendMail');
