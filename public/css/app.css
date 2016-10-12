@@ -5766,6 +5766,12 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.summary {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+  .summary .row li {
+    font-size: 18px; }
+
 footer {
   padding: 0;
   margin: 0;

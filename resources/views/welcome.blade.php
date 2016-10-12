@@ -22,9 +22,32 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1 class="text-center">Welcome</h1>
+            <h1 class="text-center">Laravel Eloquent Relationships</h1>
         </div>
     </div>
+
+    <section class="container summary">
+        <div class="row">
+            <h2>What are relationships</h2>
+            <ul>
+                <li>Link different Eloquent models</li>
+                <li>Ex: A user has posts</li>
+                <li>A user has a role</li>
+                <li>Comments belong to a user</li>
+                <li>Comments belong to a post</li>
+            </ul>
+        </div>
+        <div class="row">
+            <h2>Types of Relationships</h2>
+            <ul>
+                <li>One to One: hasOne()</li>
+                <li>One to Many: hasMany()/belongsTo()</li>
+                <li>Many to Many: belongsToMany()</li>
+                <li>Has many through: hasManyThrough()</li>
+                <li>Polymorphic: morphTo()/morphMany()</li>
+            </ul>
+        </div>
+    </section>
 
     {{-- Footer --}}
     <footer class="container-fluid">
