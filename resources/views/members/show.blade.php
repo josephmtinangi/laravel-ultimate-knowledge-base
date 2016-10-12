@@ -9,7 +9,7 @@
 				<img src="http://lorempixel.com/200/200" class="img-responsive img-circle" alt="Image">
 			</div>
 			<div class="col-sm-8">
-				<h2>{{ $member->name }}</h2>
+				<h2><a href="{{ url('members/' . $member->id ) }}">{{ $member->name }}</a></h2>
 			</div>
 		</div>
 	</div>
